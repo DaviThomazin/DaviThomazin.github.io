@@ -1,0 +1,114 @@
+.experiencia .subtitulo {
+    color: #292929;
+}
+
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    color: #d1d1d1;
+    margin-bottom: 60px;
+}
+
+.experiencia-texto strong {
+    color: #d2a221;
+}
+
+@media (max-width: 800px) {
+    .experiencia-texto {
+        font-size: 1.25rem;
+        max-width: 70ch;
+    }
+
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo {
+        font-size: 5rem;
+        max-width: 15ch;
+        margin: 0 auto;
+        color: #f0f0f0;
+    }
+
+    .empresa .empresa-ano {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media (max-width: 530px) {
+    .experiencia .subtitulo {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .empresa {
+        grid-template-columns: 1fr;
+    }
+}
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #0f0f0f;
+    border-radius: 4px;
+    align-items: center;
+    position: relative;
+}
+
+.empresa::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 50px;
+    background: linear-gradient(#D2A121, #A47705);
+    position: absolute;
+    left: -5px;
+}
+
+.empresa-ano {
+    position: absolute;
+    /*Alinhei os elementos a direita usando width para deixa-los com a mesma distancia da div.*/
+    width: 80px;
+    text-align: right;
+    top: 20px;
+    left: -100px;
+    color: f0f0f0;
+    font-size: .875rem;
+}
+
+.empresa-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa-texto {
+    font-size: .875rem;
+    line-height: 1.4;
+    color: #f0f0f0;
+}
+
+.empresa-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: start;
+}
+
+.empresa-habilidades li {
+    font-size: .875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    background: #292929;
+    color: #fff;
+    padding: 10px 20px;
+
+}
